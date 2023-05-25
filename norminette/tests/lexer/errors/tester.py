@@ -1,5 +1,4 @@
 import difflib
-import glob
 import sys
 
 from norminette.lexer import Lexer
