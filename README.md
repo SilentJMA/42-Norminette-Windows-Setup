@@ -17,6 +17,10 @@ To upgrade an existing install, use
 python3 -m pip install --upgrade norminette
 ```
 
+## Windows Install
+
+For windows users please refer to the guidline <a href="/Windows">here</a>
+
 ### Inside a virtual environment
 
 Using a virtual environment will avoid version conflicts with already globally installed packages.
