@@ -10,6 +10,29 @@ The Norminette is a tool by 42 Network, to check that the source code respects t
 
 ## Installing Chocolatey:
 
+First, ensure that you are using an administrative shell.
+
+Run 
+
+```bash
+Get-ExecutionPolicy
+```
+
+If it returns Restricted, then run
+
+```bash
+Set-ExecutionPolicy AllSigned 
+```
+Or
+
+```bash
+Set-ExecutionPolicy Bypass -Scope Process
+```
+Now run the following command:
+
+```bash
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
 <a href="https://chocolatey.org/install"> This is how you can install Chocolatey in your Windows machine</a>
 
 ## Installing Python using Chocolatey:
